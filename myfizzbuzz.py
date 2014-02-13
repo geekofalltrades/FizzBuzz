@@ -4,8 +4,8 @@ def fizzbuzz(n):
         solution += 'Fizz'
     if not n % 5:
         solution += 'Buzz'
-    return solution
+    return solution if solution else n
 
 if __name__ == '__main__':
-    num = int(input("Enter an integer."))
+    num = int(input("Enter an integer.\n"))
     print(fizzbuzz(num))
