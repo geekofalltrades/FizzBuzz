@@ -4,7 +4,6 @@ def fizzbuzz(n, **kwargs):
        numbers by which n must be divisible to print the key string.
     """
     tests = sorted(kwargs.iteritems(), key=lambda x: x[1])
-    print(tests)
 
     solution = ''
     for test in tests:
@@ -27,6 +26,9 @@ def oldfizzbuzz(n):
         solution += 'Buzz'
     return solution if solution else n
 
+
+#TEST CODE: Tests fizzbuzz() by prompting the user for an integer and a
+#list of tests.
 if __name__ == '__main__':
     num = int(input("Enter an integer.\n"))
     tests = {}
@@ -39,4 +41,5 @@ whitespace (as in 'Fizz 3' or 'Buzz   5'). Submit a blank line when finished.\n"
             break
         terms = userin.split()
         tests[terms[0]] = int(terms[1])
+
     print(fizzbuzz(num, **tests))
