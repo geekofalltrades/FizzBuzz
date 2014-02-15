@@ -7,7 +7,6 @@ numbers by which n must be divisible to print the key string.
 
     solution = ''
     for string, num in tests:
-        #string, num = test
         if not n % num:
             solution += string
 
