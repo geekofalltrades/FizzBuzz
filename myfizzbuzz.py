@@ -6,8 +6,8 @@ numbers by which n must be divisible to print the key string.
     tests = sorted(kwargs.iteritems(), key=lambda x: x[1])
 
     solution = ''
-    for test in tests:
-        string, num = test
+    for string, num in tests:
+        #string, num = test
         if not n % num:
             solution += string
 
