@@ -12,6 +12,7 @@ numbers by which n must be divisible to print the key string.
 
     return solution if solution else str(n)
 
+
 def oldfizzbuzz(n):
     """Classic fizzbuzz solution: prints Fizz if n divisible by 3, Buzz
 if divisible by 5, FizzBuzz if divisible by both, returns the
