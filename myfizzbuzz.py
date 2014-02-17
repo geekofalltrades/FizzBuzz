@@ -10,7 +10,7 @@ numbers by which n must be divisible to print the key string.
         if not n % num:
             solution += string
 
-    return solution if solution else n
+    return solution if solution else str(n)
 
 def oldfizzbuzz(n):
     """Classic fizzbuzz solution: prints Fizz if n divisible by 3, Buzz
@@ -23,7 +23,7 @@ number if divisible by neither.
         solution += 'Fizz'
     if not n % 5:
         solution += 'Buzz'
-    return solution if solution else n
+    return solution if solution else str(n)
 
 
 #TEST CODE: Tests fizzbuzz() by prompting the user for an integer and a
