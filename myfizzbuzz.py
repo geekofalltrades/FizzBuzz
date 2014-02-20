@@ -6,9 +6,10 @@ numbers by which n must be divisible to print the key string.
     tests = sorted(kwargs.iteritems(), key=lambda x: x[1])
 
     solution = ''
-    for string, num in tests:
-        if not n % num:
-            solution += string
+    if n != 0:
+        for string, num in tests:
+            if not n % num:
+                solution += string
 
     return solution if solution else str(n)
 
