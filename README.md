@@ -1,13 +1,4 @@
-Usage:
-
->>>import myfizzbuzz
->>>myfizzbuzz.oldfizzbuzz(10)
-'Buzz'
->>>myfizzbuzz.fizzbuzz(10, Fizz=3, Buzz=5)
-'Buzz'
->>>argdict = {'Fizz': 3, 'Buzz': 5, 'Sivv': 7}
->>>myfizzbuzz.fizzbuzz(21, **argdict)
-'FizzSivv'
+[![Build Status](https://travis-ci.org/geekofalltrades/FizzBuzz.png?branch=master)](https://travis-ci.org/geekofalltrades/FizzBuzz)
 
 Approach:
 I implemented fizzbuzz as a function that takes the integer as a
