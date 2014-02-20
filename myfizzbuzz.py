@@ -21,10 +21,11 @@ number if divisible by neither.
 """
 
     solution = ''
-    if not n % 3:
-        solution += 'Fizz'
-    if not n % 5:
-        solution += 'Buzz'
+    if n != 0:
+        if not n % 3:
+            solution += 'Fizz'
+        if not n % 5:
+            solution += 'Buzz'
     return solution if solution else str(n)
 
 
